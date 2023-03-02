@@ -10,7 +10,6 @@ audios[2].src = "./public/654544_13798824-lq.mp3"
 marco.addEventListener('click', function () {
 
     if (!chimenea) {
-
         audios[1].play()
         setTimeout(() => {
             audios[0].play()
@@ -21,14 +20,11 @@ marco.addEventListener('click', function () {
                 }, Math.random() * 500);
             });
         }, 2200)
-
-
         chimenea = true;
-
     } else {
         audios[2].play()
-        audios[0].pause()
         setTimeout(() => {
+            audios[0].pause()
             llamas.forEach((llama) => {
                 setTimeout(() => {
                     llama.classList.remove("encendida")
