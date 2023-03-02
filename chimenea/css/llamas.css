@@ -1,32 +1,43 @@
 section.llamas {
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    transform: translateY(-70px);
-    z-index: 1;
-    height: 30px;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  transform: translateY(-70px);
+  z-index: 1;
+  height: 30px;
 }
 
 div.llama {
-    transition: all 1s;
-    width: 10px;
-    height: 10px;
-    background-color: yellow;
-    border-radius: 83px 80px 0 0;
-    padding: 3px 0px;
-    margin: 0px 1.2px;
-    animation: llamaA 1s infinite;
+  transition: all 1s;
+  padding: 0px 0px;
+  margin: 0px 1.2px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(132, 221, 255, 0.6866947462578781) 0%,
+    rgba(247, 255, 51, 1) 8%,
+    rgba(255, 236, 53, 0.30574236530549714) 90%
+  );
+  height: 0;
 }
 
+div.llama.encendida {
+  transition: all 1s;
+  width: 10px;
+  height: 30px;
+  animation: llamaA 1s infinite;
+}
+
+div.llama.apagada {
+  transition: all 1s;
+  width: 10px;
+}
 @keyframes llamaA {
+  50% {
+    border-radius: 102px 80px 0 0;
+  }
 
-    50% {
-        border-radius: 102px 80px 0 0;
-        height: 12px;
-    }
-
-    100% {
-        border-radius: 80px 120px 0 0;
-    }
-
+  100% {
+    border-radius: 80px 120px 0 0;
+  }
 }
