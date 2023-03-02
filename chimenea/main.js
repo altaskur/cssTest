@@ -4,8 +4,8 @@ const marco = document.querySelector("main.marco");
 const llamas = document.querySelectorAll("div.llama");
 
 const audios = document.querySelectorAll("audio");
-audios[0].src = "/public/456058_28867-lq.mp3"
-audios[1].src = "/public/521125_9250976-lq.mp3"
+audios[0].src = "./public/456058_28867-lq.mp3"
+audios[1].src = "./public/521125_9250976-lq.mp3"
 audios[2].src = "./public/654544_13798824-lq.mp3"
 marco.addEventListener('click', function () {
 
