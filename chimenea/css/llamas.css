@@ -1,0 +1,32 @@
+section.llamas {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    transform: translateY(-70px);
+    z-index: 1;
+    height: 30px;
+}
+
+div.llama {
+    transition: all 1s;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 83px 80px 0 0;
+    padding: 3px 0px;
+    margin: 0px 1.2px;
+    animation: llamaA 1s infinite;
+}
+
+@keyframes llamaA {
+
+    50% {
+        border-radius: 102px 80px 0 0;
+        height: 12px;
+    }
+
+    100% {
+        border-radius: 80px 120px 0 0;
+    }
+
+}
