@@ -27,9 +27,9 @@ marco.addEventListener('click', function () {
 
     } else {
         audios[2].play()
+        audios[0].pause()
         setTimeout(() => {
             llamas.forEach((llama) => {
-                audios[0].pause()
                 setTimeout(() => {
                     llama.classList.remove("encendida")
                     llama.classList.add("apagada")
