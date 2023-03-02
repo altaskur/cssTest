@@ -22,8 +22,8 @@ marco.addEventListener('click', function () {
         }, 2200)
         chimenea = true;
     } else {
+        audios[2].play()
         setTimeout(() => {
-            audios[2].play()
             audios[0].pause()
             llamas.forEach((llama) => {
                 setTimeout(() => {
